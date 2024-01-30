@@ -14,9 +14,8 @@ router.post('/new',[
 
 
 router.post('/',[
-    check('email','el email tiene que ser obligatorio').isEmail(),
-    check('contrasena','La contraseña tiene que ser obligatoria').not().isEmpty(),
-    validarCampos
+    check('email','el email tiene que ser obligatorio'),
+    check('contrasena','La contraseña tiene que ser obligatoria').not().isEmpty()
 ],loginUser);
 
 

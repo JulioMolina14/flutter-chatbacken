@@ -24,7 +24,7 @@ const UsuariosSchema =Schema({
 });
 
 UsuariosSchema.method('toJSON',function(){
- const {__v,_id,contrasena, online, ...object}=this.toObject();
+ const {__v,_id,contrasena, ...object}=this.toObject();
  object.uid=_id;
  return object;
 });
